@@ -1,5 +1,6 @@
-# Login
-psql --username=freecodecamp --dbname=postgres
+# Shortcuts
+sudo service postgresql restart
+psql --username=freecodecamp --dbname=salon
 
 # Dump
 pg_dump -cC --inserts -U freecodecamp salon > salon.sql
