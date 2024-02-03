@@ -173,42 +173,54 @@ ALTER TABLE ONLY public.services ALTER COLUMN service_id SET DEFAULT nextval('pu
 -- Data for Name: appointments; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.appointments VALUES (223, 276, 4, 'tet');
+INSERT INTO public.appointments VALUES (171, 243, 1, '10:30');
+INSERT INTO public.appointments VALUES (184, 243, 1, '10:30');
+INSERT INTO public.appointments VALUES (191, 243, 1, '10:30');
+INSERT INTO public.appointments VALUES (198, 264, 1, '2234');
 
 
 --
 -- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.customers VALUES (243, '555-555-5555', 'Fabio');
+INSERT INTO public.customers VALUES (264, '5235', 'ddfg');
+INSERT INTO public.customers VALUES (270, 'erwer', 'et');
+INSERT INTO public.customers VALUES (276, 'sdf', 'tet');
+INSERT INTO public.customers VALUES (282, 'fg', 'tet');
 
 
 --
 -- Data for Name: services; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.services VALUES (1, 'Haircut');
-INSERT INTO public.services VALUES (2, 'Wash');
-INSERT INTO public.services VALUES (3, 'Shave');
+INSERT INTO public.services VALUES (1, 'cut');
+INSERT INTO public.services VALUES (2, 'color');
+INSERT INTO public.services VALUES (3, 'perm');
+INSERT INTO public.services VALUES (4, 'style');
+INSERT INTO public.services VALUES (5, 'trim');
 
 
 --
 -- Name: appointments_appointment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 1, false);
+SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 235, true);
 
 
 --
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 1, false);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 297, true);
 
 
 --
 -- Name: services_service_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.services_service_id_seq', 3, true);
+SELECT pg_catalog.setval('public.services_service_id_seq', 5, true);
 
 
 --
